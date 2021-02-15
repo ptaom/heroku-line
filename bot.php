@@ -144,7 +144,7 @@ if(!is_null($events)){
 }
  
 //l ส่วนของคำสั่งตอบกลับข้อความ
-$response = $bot->replyMessage($replyToken,$textMessageBuilder);
+$response = $bot->replyMessage($replyToken,$replyData);
 if ($response->isSucceeded()) {
     echo 'Succeeded!';
     return;
