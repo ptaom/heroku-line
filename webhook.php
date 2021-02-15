@@ -7,7 +7,7 @@ error_reporting(E_ALL);
 // include composer autoload
 require "vendor/autoload.php";
  
-// ดึง config bot
+// ดึง config id&token bot
 require_once 'bot_settings.php';
  
 ///////////// ส่วนของการเรียกใช้งาน class ผ่าน namespace
