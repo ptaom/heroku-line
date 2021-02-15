@@ -82,7 +82,7 @@ if(!is_null($events)){
                     $replyData = new AudioMessageBuilder($audioUrl,27000);
                     break;
                 case "ที่ตั้ง":
-                    $placeName = "ที่ตั้งร้าน";
+                    $placeName = "ที่ตั้งบริษัท";
                     $placeAddress = "332 333 หมู่ 5 ถ. พหลโยธิน ตำบล ลำไทร อำเภอวังน้อย จังหวัดพระนครศรีอยุธยา 13170";
                     $latitude = 14.228424142606057;
                     $longitude = 100.70143403664254;
