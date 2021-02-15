@@ -55,10 +55,14 @@ $bot = new LINEBot($httpClient, array('channelSecret' => LINE_MESSAGE_CHANNEL_SE
 // userId 
 $userId = 'U8ce30dfdaaa66aeda897463c4e93a039';
 // ทดสอบส่ง push ข้อความอย่างง่าย
-$textPushMessage = 'สวัสดีครับ';                
-$messageData = new TextMessageBuilder($textPushMessage);        
+$textPushMessage = 'สวัสดีครับ';
+$picFullSize = 'https://sv1.picz.in.th/images/2021/02/15/oQ57aW.md.jpg';
+$picThumbnail = 'https://sv1.picz.in.th/images/2021/02/15/oQ57aW.md.jpg';
+$replyData = new ImageMessageBuilder($picFullSize,$picThumbnail);
+
+//$messageData = new TextMessageBuilder($textPushMessage);        
              
-$response = $bot->pushMessage($userId,$messageData);
+$response = $bot->pushMessage($userId,$replyData);
 if ($response->isSucceeded()) {
     echo 'Succeeded!';
     return;
