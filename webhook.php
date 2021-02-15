@@ -66,38 +66,45 @@ if(!is_null($events)){
     switch ($typeMessage){
         case 'text':
             switch ($userMessage) {
-                case "t":
-                    $textReplyMessage = "Bot ตอบกลับคุณเป็นข้อความ";
+                case "ข้อความ":
+                    $textReplyMessage = "ท่านได้ส่งข้อความครับ";
                     $replyData = new TextMessageBuilder($textReplyMessage);
                     break;
-                case "i":
+                case "ภาพ":
                     $picFullSize = 'https://sv1.picz.in.th/images/2021/02/15/oQ57aW.md.jpg';
                     $picThumbnail = 'https://sv1.picz.in.th/images/2021/02/15/oQ57aW.md.jpg';
                     $replyData = new ImageMessageBuilder($picFullSize,$picThumbnail);
                     break;
-                case "v":
+                case "วีดีโอ":
                     $picThumbnail = 'https://www.mywebsite.com/imgsrc/photos/f/sampleimage/240';
                     $videoUrl = "https://www.mywebsite.com/simplevideo.mp4";                
                     $replyData = new VideoMessageBuilder($videoUrl,$picThumbnail);
                     break;
-                case "a":
+                case "เสียง":
                     $audioUrl = "https://www.mywebsite.com/simpleaudio.mp3";
                     $replyData = new AudioMessageBuilder($audioUrl,27000);
                     break;
-                case "l":
+                case "ที่ตั้ง":
                     $placeName = "ที่ตั้งร้าน";
                     $placeAddress = "แขวง พลับพลา เขต วังทองหลาง กรุงเทพมหานคร ประเทศไทย";
                     $latitude = 13.780401863217657;
                     $longitude = 100.61141967773438;
                     $replyData = new LocationMessageBuilder($placeName, $placeAddress, $latitude ,$longitude);              
                     break;
-                case "s":
+                case "สติ๊กเกอร์":
                     $stickerID = 22;
                     $packageID = 2;
                     $replyData = new StickerMessageBuilder($packageID,$stickerID);
                     break;                                                                                                               
                 default:
-                    $textReplyMessage = " คุณไม่ได้พิมพ์ ค่า ตามที่กำหนด";
+                    $textReplyMessage = "ฉันยังไม่ค่อยเข้าใจกรุณาลองใช้คำที่กำหนด
+                    - ข้อความ
+                    - ภาพ
+                    - วีดีโอ
+                    - เสียง
+                    - ที่ตั้ง
+                    - สติ๊กเกอร์
+                      ";
                     $replyData = new TextMessageBuilder($textReplyMessage);         
                     break;                                      
             }
