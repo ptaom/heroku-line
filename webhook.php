@@ -73,8 +73,8 @@ if(!is_null($events)){
                     $replyData = new ImageMessageBuilder($picFullSize,$picThumbnail);
                     break;
                 case "วีดีโอ":
-                    $picThumbnail = 'https://www.mywebsite.com/imgsrc/photos/f/sampleimage/240';
-                    $videoUrl = "https://www.mywebsite.com/simplevideo.mp4";                
+                    $picThumbnail = 'https://www.i-vdo.info/v/cayhxorb1170';
+                    $videoUrl = "https://www.i-vdo.info/v/cayhxorb1170";                
                     $replyData = new VideoMessageBuilder($videoUrl,$picThumbnail);
                     break;
                 case "เสียง":
@@ -83,9 +83,9 @@ if(!is_null($events)){
                     break;
                 case "ที่ตั้ง":
                     $placeName = "ที่ตั้งร้าน";
-                    $placeAddress = "แขวง พลับพลา เขต วังทองหลาง กรุงเทพมหานคร ประเทศไทย";
-                    $latitude = 13.780401863217657;
-                    $longitude = 100.61141967773438;
+                    $placeAddress = "332 333 หมู่ 5 ถ. พหลโยธิน ตำบล ลำไทร อำเภอวังน้อย จังหวัดพระนครศรีอยุธยา 13170";
+                    $latitude = 14.228424142606057;
+                    $longitude = 100.70143403664254;
                     $replyData = new LocationMessageBuilder($placeName, $placeAddress, $latitude ,$longitude);              
                     break;
                 case "สติ๊กเกอร์":
