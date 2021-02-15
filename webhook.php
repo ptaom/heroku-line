@@ -95,41 +95,7 @@ if(!is_null($events)){
                     $stickerID = 22;
                     $packageID = 2;
                     $replyData = new StickerMessageBuilder($packageID,$stickerID);
-                    break;      
-                case "im":
-                    $imageMapUrl = 'https://www.mywebsite.com/imgsrc/photos/w/sampleimagemap';
-                    $replyData = new ImagemapMessageBuilder(
-                        $imageMapUrl,
-                        'This is Title',
-                        new BaseSizeBuilder(699,1040),
-                        array(
-                            new ImagemapMessageActionBuilder(
-                                'test image map',
-                                new AreaBuilder(0,0,520,699)
-                                ),
-                            new ImagemapUriActionBuilder(
-                                'http://www.ninenik.com',
-                                new AreaBuilder(520,0,520,699)
-                                )
-                        )); 
-                    break;          
-                case "tm":
-                    $replyData = new TemplateMessageBuilder('Confirm Template',
-                        new ConfirmTemplateBuilder(
-                                'Confirm template builder',
-                                array(
-                                    new MessageTemplateActionBuilder(
-                                        'Yes',
-                                        'Text Yes'
-                                    ),
-                                    new MessageTemplateActionBuilder(
-                                        'No',
-                                        'Text NO'
-                                    )
-                                )
-                        )
-                    );
-                    break;                                                                                                                          
+                    break;                                                                                                               
                 default:
                     $textReplyMessage = " คุณไม่ได้พิมพ์ ค่า ตามที่กำหนด";
                     $replyData = new TextMessageBuilder($textReplyMessage);         
