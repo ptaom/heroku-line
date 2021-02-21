@@ -98,7 +98,7 @@ if(!is_null($events)){
                     $replyData = new TextMessageBuilder($textReplyMessage);
                     break;
                case "บอท":
-                    $textReplyMessage = "บอทอยู่นี่ อยากทราบข้อมูลอะไรสอบถามได้เลยค่ะ ";
+                    $textReplyMessage = "บอทอยู่นี่ อยากทราบข้อมูลอะไรสอบถามได้เลยค่ะ";
                     $replyData = new TextMessageBuilder($textReplyMessage);
                     break;
                 default:
