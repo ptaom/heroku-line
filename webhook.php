@@ -64,60 +64,58 @@ if(!is_null($events)){
         case 'text':
             switch ($userMessage) {
                 case "ติดต่อเจ้าหน้าที่":
-                    $textReplyMessage = "เบอร์โทรติดต่อเจ้าหน้าที่
-                    คุณสรัลกร พลายกล่ำ (คุณรัล) = 4020
-                    คุณลลิตา ปิ่นรักษา  (คุณเบน) = 4021
-                    คุณอรวรา กรุงเกตุ  (คุณหมิว) = 4122    
-                    ";
-                    $replyData = new TextMessageBuilder($textReplyMessage);
-                    break;
-               case "บอท":
-                    $textReplyMessage = "บอทอยู่นี่ อยากทราบข้อมูลอะไรสอบถามได้เลยครับ";
-                    $replyData = new TextMessageBuilder($textReplyMessage);
-                    break;
-                case "ภาพ":
-                    $picFullSize = 'https://sv1.picz.in.th/images/2021/02/15/oQ57aW.md.jpg';
-                    $picThumbnail = 'https://sv1.picz.in.th/images/2021/02/15/oQ57aW.md.jpg';
-                    $replyData = new ImageMessageBuilder($picFullSize,$picThumbnail);
-                    break;
-                case "วีดีโอ":
-                    $picThumbnail = 'https://www.i-vdo.info/v/cayhxorb1170';
-                    $videoUrl = "https://www.i-vdo.info/v/cayhxorb1170";                
-                    $replyData = new VideoMessageBuilder($videoUrl,$picThumbnail);
-                    break;
-                case "เสียง":
-                    $audioUrl = "https://www.mywebsite.com/simpleaudio.mp3";
-                    $replyData = new AudioMessageBuilder($audioUrl,27000);
-                    break;
-                case "ที่ตั้ง":
-                    $placeName = "ที่ตั้งบริษัท";
-                    $placeAddress = "332 333 หมู่ 5 ถ. พหลโยธิน ตำบล ลำไทร อำเภอวังน้อย จังหวัดพระนครศรีอยุธยา 13170";
-                    $latitude = 14.228424142606057;
-                    $longitude = 100.70143403664254;
-                    $replyData = new LocationMessageBuilder($placeName, $placeAddress, $latitude ,$longitude);              
-                    break;
-                case "สติ๊กเกอร์":
-                    $stickerID = 22;
-                    $packageID = 2;
-                    $replyData = new StickerMessageBuilder($packageID,$stickerID);
-                    break;
-               case "สวัสดี":
-                    $textReplyMessage = "สวัสดีครับ 😊";
-                    $replyData = new TextMessageBuilder($textReplyMessage);
-                    break;
-                default:
-                    $textReplyMessage = "บอทขออภัยที่ยังไม่ค่อยเข้าใจในคำถาม กรุณาเปลี่ยนคำถามหรือใช้คำที่ใกล้เคียง บอทขอแนะนำ อย่างเช่น
-                - ข้อมูลการอบรม
-                - ติดต่อเจ้าหน้าที่ 
-                - ข้อความ
-                - ภาพ
-                - วีดีโอ
-                - เสียง
-                - ที่ตั้ง
-                - สติ๊กเกอร์
-                      ";
-                    $replyData = new TextMessageBuilder($textReplyMessage);         
-                    break;                                      
+        $textReplyMessage = "เบอร์โทรติดต่อเจ้าหน้าที่
+        คุณสรัลกร พลายกล่ำ (คุณรัล) = 4020
+        คุณลลิตา ปิ่นรักษา  (คุณเบน) = 4021
+        คุณอรวรา กรุงเกตุ  (คุณหมิว) = 4122    
+         ";
+        $replyData = new TextMessageBuilder($textReplyMessage);
+        break;
+        case "บอท":
+            $textReplyMessage = "บอทอยู่นี่ อยากทราบข้อมูลอะไรสอบถามได้เลยครับ";
+            $replyData = new TextMessageBuilder($textReplyMessage);
+        break;
+        case "ภาพ":
+            $picFullSize = 'https://sv1.picz.in.th/images/2021/02/15/oQ57aW.md.jpg';
+            $picThumbnail = 'https://sv1.picz.in.th/images/2021/02/15/oQ57aW.md.jpg';
+            $replyData = new ImageMessageBuilder($picFullSize,$picThumbnail);
+        break;
+        case "วีดีโอ":
+            $picThumbnail = 'https://www.i-vdo.info/v/cayhxorb1170';
+            $videoUrl = "https://www.i-vdo.info/v/cayhxorb1170";                
+            $replyData = new VideoMessageBuilder($videoUrl,$picThumbnail);
+        break;
+        case "เสียง":
+            $audioUrl = "https://www.mywebsite.com/simpleaudio.mp3";
+            $replyData = new AudioMessageBuilder($audioUrl,27000);
+        break;
+        case "ที่ตั้ง":
+            $placeName = "ที่ตั้งบริษัท";
+            $placeAddress = "332 333 หมู่ 5 ถ. พหลโยธิน ตำบล ลำไทร อำเภอวังน้อย จังหวัดพระนครศรีอยุธยา 13170";
+            $latitude = 14.228424142606057;
+            $longitude = 100.70143403664254;
+            $replyData = new LocationMessageBuilder($placeName, $placeAddress, $latitude ,$longitude);              
+        break;
+        case "สติ๊กเกอร์":
+            $stickerID = 22;
+            $packageID = 2;
+            $replyData = new StickerMessageBuilder($packageID,$stickerID);
+        break;
+        case "สวัสดี":
+            $textReplyMessage = "สวัสดีครับ 😊";
+            $replyData = new TextMessageBuilder($textReplyMessage);
+        break;
+        default:
+            $textReplyMessage = "บอทขออภัยที่ยังไม่ค่อยเข้าใจในคำถาม กรุณาเปลี่ยนคำถามหรือใช้คำที่ใกล้เคียง บอทขอแนะนำ อย่างเช่น
+        - ข้อมูลการอบรม
+        - ติดต่อเจ้าหน้าที่ 
+        - ที่ตั้ง
+        - ข้อความ,ภาพ
+        - วีดีโอ,เสียง
+        - สติ๊กเกอร์
+        ";
+            $replyData = new TextMessageBuilder($textReplyMessage);         
+       break;                                      
             }
             break;
         default:
