@@ -64,10 +64,10 @@ if(!is_null($events)){
         case 'text':
             switch ($userMessage) {
                 case "ติดต่อเจ้าหน้าที่":
-        $textReplyMessage = "เบอร์โทรติดต่อเจ้าหน้าที่
-        คุณสรัลกร พลายกล่ำ (คุณรัล) = 4020
-        คุณลลิตา ปิ่นรักษา  (คุณเบน) = 4021
-        คุณอรวรา กรุงเกตุ  (คุณหมิว) = 4122    
+        $textReplyMessage = "เบอร์โทรติดต่อเจ้าหน้าที่ KD
+        คุณสรัลกร (คุณรัล) = 4020
+        คุณลลิตา (คุณเบน) = 4021
+        คุณอรวรา (คุณหมิว) = 4122    
          ";
         $replyData = new TextMessageBuilder($textReplyMessage);
         break;
