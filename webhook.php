@@ -63,8 +63,12 @@ if(!is_null($events)){
     switch ($typeMessage){
         case 'text':
             switch ($userMessage) {
-                case "ข้อความ":
-                    $textReplyMessage = "ท่านได้ส่งข้อความครับ";
+                case "ติดต่อเจ้าหน้าที่":
+                    $textReplyMessage = "เบอร์โทรติดต่อเจ้าหน้าที่
+                    คุณสรัลกร พลายกล่ำ (คุณรัล) = 4020
+                    คุณลลิตา ปิ่นรักษา  (คุณเบน) = 4021
+                    คุณอรวรา กรุงเกตุ  (คุณหมิว) = 4122    
+                    ";
                     $replyData = new TextMessageBuilder($textReplyMessage);
                     break;
                case "บอท":
@@ -103,14 +107,14 @@ if(!is_null($events)){
                     break;
                 default:
                     $textReplyMessage = "บอทขออภัยที่ยังไม่ค่อยเข้าใจในคำถาม กรุณาเปลี่ยนคำถามหรือใช้คำที่ใกล้เคียง บอทขอแนะนำ อย่างเช่น
-                    - ข้อมูลการอบรม
-                    - ติดต่อเจ้าหน้าที่ 
-                    - ข้อความ
-                    - ภาพ
-                    - วีดีโอ
-                    - เสียง
-                    - ที่ตั้ง
-                    - สติ๊กเกอร์
+                - ข้อมูลการอบรม
+                - ติดต่อเจ้าหน้าที่ 
+                - ข้อความ
+                - ภาพ
+                - วีดีโอ
+                - เสียง
+                - ที่ตั้ง
+                - สติ๊กเกอร์
                       ";
                     $replyData = new TextMessageBuilder($textReplyMessage);         
                     break;                                      
