@@ -67,6 +67,10 @@ if(!is_null($events)){
                     $textReplyMessage = "ท่านได้ส่งข้อความครับ";
                     $replyData = new TextMessageBuilder($textReplyMessage);
                     break;
+               case "บอท":
+                    $textReplyMessage = "บอทอยู่นี่ อยากทราบข้อมูลอะไรสอบถามได้เลยค่ะ";
+                    $replyData = new TextMessageBuilder($textReplyMessage);
+                    break;
                 case "ภาพ":
                     $picFullSize = 'https://sv1.picz.in.th/images/2021/02/15/oQ57aW.md.jpg';
                     $picThumbnail = 'https://sv1.picz.in.th/images/2021/02/15/oQ57aW.md.jpg';
@@ -95,10 +99,6 @@ if(!is_null($events)){
                     break;
                case "สวัสดี":
                     $textReplyMessage = "สวัสดีค่ะ 😊";
-                    $replyData = new TextMessageBuilder($textReplyMessage);
-                    break;
-               case "บอท":
-                    $textReplyMessage = "บอทอยู่นี่ อยากทราบข้อมูลอะไรสอบถามได้เลยค่ะ";
                     $replyData = new TextMessageBuilder($textReplyMessage);
                     break;
                 default:
