@@ -79,11 +79,6 @@ if(!is_null($events)){
     $picThumbnail = 'https://sv1.picz.in.th/images/2021/02/15/oQ57aW.md.jpg';
     $replyData = new ImageMessageBuilder($picFullSize,$picThumbnail);
     break;
- case "แผนที่":
-    $picFullSize = 'https://drive.google.com/file/d/1xCWjHA7WTuKkwR245sPyIES-GGaAMYrn/view?usp=sharing';
-    $picThumbnail = 'https://drive.google.com/file/d/1xCWjHA7WTuKkwR245sPyIES-GGaAMYrn/view?usp=sharing';
-    $replyData = new ImageMessageBuilder($picFullSize,$picThumbnail);
-    break;
  case "วีดีโอ":
     $picThumbnail = 'https://www.i-vdo.info/v/cayhxorb1170';
     $videoUrl = "https://www.i-vdo.info/v/cayhxorb1170";                
