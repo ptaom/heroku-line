@@ -123,6 +123,10 @@ if(!is_null($events)){
  }
 
 }
+ default:
+   $textReplyMessage = json_encode($events);
+   $replyData = new TextMessageBuilder($textReplyMessage);         
+   break;  
 }
  
 //l ส่วนของคำสั่งตอบกลับข้อความ
