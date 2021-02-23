@@ -121,11 +121,7 @@ if(!is_null($events)){
  $replyData = new TextMessageBuilder($textReplyMessage);         
     break;                                      
  }
-    break;
- default:
- $textReplyMessage = json_encode($events);
- $replyData = new TextMessageBuilder($textReplyMessage);         
-    break;  
+
 }
 }
  
