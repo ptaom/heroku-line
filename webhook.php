@@ -80,6 +80,8 @@ if(!is_null($events)){
     $replyData = new ImageMessageBuilder($picFullSize,$picThumbnail);
     break;
   case "แผนที่":
+    $textReplyMessage = "ท่านสามารถดูแผนที่ห้องอบรมได้จากรูปภาพด้านล่างนี้";
+    $replyData = new TextMessageBuilder($textReplyMessage);
     $picFullSize = 'https://sv1.picz.in.th/images/2021/02/23/oCK7cP.png';
     $picThumbnail = 'https://sv1.picz.in.th/images/2021/02/23/oCK7cP.png';
     $replyData = new ImageMessageBuilder($picFullSize,$picThumbnail);
