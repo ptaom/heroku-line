@@ -80,11 +80,9 @@ if(!is_null($events)){
     $replyData = new ImageMessageBuilder($picFullSize,$picThumbnail);
     break;
   case "แผนที่":
-    $textReplyMessage = "ท่านสามารถดูแผนที่ห้องอบรมได้จากรูปภาพด้านล่างนี้";
     $picFullSize = 'https://sv1.picz.in.th/images/2021/02/23/oCK7cP.png';
     $picThumbnail = 'https://sv1.picz.in.th/images/2021/02/23/oCK7cP.png';
     $replyData = new ImageMessageBuilder($picFullSize,$picThumbnail);
-    $replyData = new TextMessageBuilder($textReplyMessage);
     break;  
  case "วีดีโอ":
     $picThumbnail = 'https://www.i-vdo.info/v/cayhxorb1170';
@@ -123,12 +121,12 @@ if(!is_null($events)){
  $replyData = new TextMessageBuilder($textReplyMessage);         
     break;                                      
  }
-   break;
-        default:
-               $stickerID = 52002744;
-               $packageID = 11537;
-               $replyData = new StickerMessageBuilder($packageID,$stickerID);         
-            break;  
+ break;
+ default:
+    $stickerID = 52002744;
+    $packageID = 11537;
+    $replyData = new StickerMessageBuilder($packageID,$stickerID);         
+ break;  
     }
 }
  
