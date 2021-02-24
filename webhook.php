@@ -123,6 +123,14 @@ if(!is_null($events)){
  $replyData = new TextMessageBuilder($textReplyMessage);         
     break;                                      
  }
+   break;
+        default:
+               $stickerID = 52002744;
+               $packageID = 11537;
+               $replyData = new StickerMessageBuilder($packageID,$stickerID);         
+            break;  
+    }
+}
  
 //l ส่วนของคำสั่งตอบกลับข้อความ
 $response = $bot->replyMessage($replyToken,$replyData);
