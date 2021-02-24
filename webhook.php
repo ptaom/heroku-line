@@ -116,12 +116,12 @@ if(!is_null($events)){
     $textReplyMessage = "สวัสดีครับ 😊";
     $replyData = new TextMessageBuilder($textReplyMessage);
     break;
-  case "Hello":
-    $textReplyMessage = "สวัสดีครับ 😊";
+ case "ข้อมูลการอบรม":
+    $textReplyMessage = "ขณะนี้ ข้อมูลการอบรมยังไม่พร้อมใช้งานครับ";
     $replyData = new TextMessageBuilder($textReplyMessage);
-    break;
-  case "ข้อมูลการอบรม":
-    $textReplyMessage = "ขณะนี้ ข้อมูลการอบรมยังไม่พร้อมงานครับ";
+  break;
+  case "ขอบคุณ,ขอบคุณครับ,ขอบคุณค่ะ":
+    $textReplyMessage = "บอทยินดีรับใช้ครับ";
     $replyData = new TextMessageBuilder($textReplyMessage);
   break;
  default:
