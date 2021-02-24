@@ -116,6 +116,14 @@ if(!is_null($events)){
     $textReplyMessage = "สวัสดีครับ 😊";
     $replyData = new TextMessageBuilder($textReplyMessage);
     break;
+ case "Hi":
+    $textReplyMessage = "สวัสดีครับ 😊";
+    $replyData = new TextMessageBuilder($textReplyMessage);
+    break;
+  case "Hello":
+    $textReplyMessage = "สวัสดีครับ 😊";
+    $replyData = new TextMessageBuilder($textReplyMessage);
+    break;
  default:
     $textReplyMessage = "บอทขออภัยที่ยังไม่ค่อยเข้าใจในคำถาม กรุณาเปลี่ยนคำถามหรือใช้คำที่ใกล้เคียง บอทขอแนะนำ อย่างเช่น
  - ข้อมูลการอบรม
