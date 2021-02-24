@@ -86,11 +86,16 @@ if(!is_null($events)){
     $picThumbnail = 'https://sv1.picz.in.th/images/2021/02/15/oQ57aW.md.jpg';
     $replyData = new ImageMessageBuilder($picFullSize,$picThumbnail);
     break;
-  case "แผนที่":
+ case "แผนที่":
     $picFullSize = 'https://sv1.picz.in.th/images/2021/02/23/oCK7cP.png';
     $picThumbnail = 'https://sv1.picz.in.th/images/2021/02/23/oCK7cP.png';
     $replyData = new ImageMessageBuilder($picFullSize,$picThumbnail);
-    break;  
+    break; 
+ case "ห้องอบรม":
+    $picFullSize = 'https://sv1.picz.in.th/images/2021/02/23/oCK7cP.png';
+    $picThumbnail = 'https://sv1.picz.in.th/images/2021/02/23/oCK7cP.png';
+    $replyData = new ImageMessageBuilder($picFullSize,$picThumbnail);
+    break;
  case "วีดีโอ":
     $picThumbnail = 'https://www.i-vdo.info/v/cayhxorb1170';
     $videoUrl = "https://www.i-vdo.info/v/cayhxorb1170";                
@@ -120,12 +125,9 @@ if(!is_null($events)){
     $textReplyMessage = "ขณะนี้ ข้อมูลการอบรมยังไม่พร้อมใช้งานครับ";
     $replyData = new TextMessageBuilder($textReplyMessage);
   break;
-  case "ขอบคุณ,ขอบคุณครับ,ขอบคุณค่ะ":
-    $textReplyMessage = "บอทยินดีรับใช้ครับ";
-    $replyData = new TextMessageBuilder($textReplyMessage);
-  break;
+
  default:
-    $textReplyMessage = "บอทขออภัยที่ยังไม่ค่อยเข้าใจในคำถาม กรุณาเปลี่ยนคำถามหรือใช้คำที่ใกล้เคียง บอทขอแนะนำ อย่างเช่น
+ $textReplyMessage = "บอทขออภัยที่ยังไม่ค่อยเข้าใจในคำถาม กรุณาเปลี่ยนคำถามหรือใช้คำที่ใกล้เคียง บอทขอแนะนำ อย่างเช่น
  - ข้อมูลการอบรม
  - ติดต่อเจ้าหน้าที่ 
  - แผนที่,ที่ตั้งบริษัท
