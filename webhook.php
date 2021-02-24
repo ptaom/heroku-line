@@ -70,6 +70,13 @@ if(!is_null($events)){
  คุณอรวรา (คุณหมิว) = 4122";
     $replyData = new TextMessageBuilder($textReplyMessage);
     break;
+ case "ติดต่อ":
+    $textReplyMessage = "เบอร์โทรติดต่อเจ้าหน้าที่ KD 
+ คุณสรัลกร (คุณรัล)  = 4020
+ คุณลลิตา (คุณเบน)  = 4021
+ คุณอรวรา (คุณหมิว) = 4122";
+    $replyData = new TextMessageBuilder($textReplyMessage);
+    break;
  case "บอท":
     $textReplyMessage = "บอทอยู่นี่ อยากทราบข้อมูลอะไรสอบถามได้เลยครับ";
     $replyData = new TextMessageBuilder($textReplyMessage);
