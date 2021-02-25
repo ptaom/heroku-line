@@ -81,11 +81,6 @@ if(!is_null($events)){
     $textReplyMessage = "บอทอยู่นี่ อยากทราบข้อมูลอะไรสอบถามได้เลยครับ";
     $replyData = new TextMessageBuilder($textReplyMessage);
     break;
- case "ภาพ":
-    $picFullSize = 'https://sv1.picz.in.th/images/2021/02/15/oQ57aW.md.jpg';
-    $picThumbnail = 'https://sv1.picz.in.th/images/2021/02/15/oQ57aW.md.jpg';
-    $replyData = new ImageMessageBuilder($picFullSize,$picThumbnail);
-    break;
  case "แผนที่":
     $picFullSize = 'https://sv1.picz.in.th/images/2021/02/23/oCK7cP.png';
     $picThumbnail = 'https://sv1.picz.in.th/images/2021/02/23/oCK7cP.png';
@@ -112,9 +107,9 @@ if(!is_null($events)){
     $longitude = 100.70143403664254;
     $replyData = new LocationMessageBuilder($placeName, $placeAddress, $latitude ,$longitude);              
     break;
- case "สติ๊กเกอร์":
-    $stickerID = 22;
-    $packageID = 2;
+ case "Hi":
+    $stickerID = 11537;
+    $packageID = 52002738;
     $replyData = new StickerMessageBuilder($packageID,$stickerID);
     break;
  case "สวัสดี":
@@ -131,7 +126,6 @@ if(!is_null($events)){
  - ข้อมูลการอบรม
  - ติดต่อเจ้าหน้าที่ 
  - แผนที่,ที่ตั้งบริษัท
- - ข้อความ,ภาพ
  - วีดีโอ,เสียง
  - สติ๊กเกอร์
  ";
