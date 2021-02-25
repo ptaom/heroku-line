@@ -127,7 +127,6 @@ if(!is_null($events)){
  - ติดต่อเจ้าหน้าที่ 
  - แผนที่,ที่ตั้งบริษัท
  - วีดีโอ,เสียง
- - สติ๊กเกอร์
  ";
  $replyData = new TextMessageBuilder($textReplyMessage);         
     break;                                      
