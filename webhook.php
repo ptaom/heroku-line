@@ -107,9 +107,9 @@ if(!is_null($events)){
     $longitude = 100.70143403664254;
     $replyData = new LocationMessageBuilder($placeName, $placeAddress, $latitude ,$longitude);              
     break;
- case "Hi":
-    $stickerID = 52002738;
-    $packageID = 11537;
+ case "ขอบคุณ":
+    $stickerID = 52114119;
+    $packageID = 11539;
     $replyData = new StickerMessageBuilder($packageID,$stickerID);
     break;
  case "สวัสดี":
