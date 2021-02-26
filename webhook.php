@@ -130,12 +130,12 @@ if(!is_null($events)){
  ";
  $replyData = new TextMessageBuilder($textReplyMessage);         
     break;  
- case "เรื่องสั้น":
-  $imageMapUrl = 'https://sv1.picz.in.th/images/2021/02/26/o8qX8b.png';
+ case "New":
+  $imageMapUrl = 'https://sv1.picz.in.th/images/2021/02/26/o8EPe2.png';
   $replyData = new ImagemapMessageBuilder(
   $imageMapUrl,'URL',new BaseSizeBuilder(699,1040),array(
   //new ImagemapMessageActionBuilder('MSarea',new AreaBuilder(0,0,520,699)),
-  new ImagemapUriActionBuilder('https://www.picz.in.th/image/o8qp7f',new AreaBuilder(0,0,1024,699))
+  new ImagemapUriActionBuilder('https://www.รู้เรื่องเงิน.com/',new AreaBuilder(0,0,1024,699))
  )); 
  break;
    
