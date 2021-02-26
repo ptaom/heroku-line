@@ -130,7 +130,7 @@ if(!is_null($events)){
  ";
  $replyData = new TextMessageBuilder($textReplyMessage);         
     break;  
- case "im":
+ case "เรื่องสั้น":
   $imageMapUrl = 'https://sv1.picz.in.th/images/2021/02/15/oQ57aW.md.jpg';
   $replyData = new ImagemapMessageBuilder(
   $imageMapUrl,'URL',new BaseSizeBuilder(699,1040),array(
