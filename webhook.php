@@ -130,7 +130,7 @@ if(!is_null($events)){
  ";
  $replyData = new TextMessageBuilder($textReplyMessage);         
     break;  
- case "New":
+ case "new":
   $imageMapUrl = 'https://sv1.picz.in.th/images/2021/02/26/o8EPe2.png';
   $replyData = new ImagemapMessageBuilder(
   $imageMapUrl,'URL',new BaseSizeBuilder(699,1040),array(
