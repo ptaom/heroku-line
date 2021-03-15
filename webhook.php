@@ -91,12 +91,12 @@ if(!is_null($events)){
     $picThumbnail = 'https://sv1.picz.in.th/images/2021/02/23/oCK7cP.png';
     $replyData = new ImageMessageBuilder($picFullSize,$picThumbnail);
     break;
- case "วีดีโอ":
+ //case "วีดีโอ":
     $picThumbnail = 'https://www.i-vdo.info/v/cayhxorb1170';
     $videoUrl = "https://www.i-vdo.info/v/cayhxorb1170";                
     $replyData = new VideoMessageBuilder($videoUrl,$picThumbnail);
     break;
- case "เสียง":
+//case "เสียง":
     $audioUrl = "https://www.mywebsite.com/simpleaudio.mp3";
     $replyData = new AudioMessageBuilder($audioUrl,27000);
     break;
@@ -120,13 +120,24 @@ if(!is_null($events)){
     $textReplyMessage = "ขณะนี้ ข้อมูลการอบรมยังไม่พร้อมใช้งานครับ";
     $replyData = new TextMessageBuilder($textReplyMessage);
   break;
-
+   
+case "ข้อมูลบอท":
+    $textReplyMessage = "ID Line : @210pmvok";
+    $replyData = new TextMessageBuilder($textReplyMessage);
+break;
+   
+ case "QRcode":
+    $picFullSize = 'https://sv1.picz.in.th/images/2021/02/23/oCK7cP.png';
+    $picThumbnail = 'https://sv1.picz.in.th/images/2021/02/23/oCK7cP.png';
+    $replyData = new ImageMessageBuilder($picFullSize,$picThumbnail);
+  break;
+   
  default:
  $textReplyMessage = "บอทขออภัยที่ยังไม่ค่อยเข้าใจในคำถาม กรุณาเปลี่ยนคำถามหรือใช้คำที่ใกล้เคียง บอทขอแนะนำ อย่างเช่น
  - ข้อมูลการอบรม
  - ติดต่อเจ้าหน้าที่ 
- - แผนที่,ที่ตั้งบริษัท
- - วีดีโอ,เสียง
+ - ห้องอบรม,ที่ตั้งบริษัท
+ - ข้อมูลบอท
  ";
  $replyData = new TextMessageBuilder($textReplyMessage);         
     break;  
