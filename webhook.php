@@ -122,13 +122,10 @@ if(!is_null($events)){
   break;
    
 case "ข้อมูลบอท":
-    $textReplyMessage = "ID Line : @210pmvok";
+    $textReplyMessage = "ID Line : @210pmvok หรือ แสกน QR Code" ;
     $replyData = new TextMessageBuilder($textReplyMessage);
-    $picFullSize = 'https://sv1.picz.in.th/images/2021/03/16/DiWu9S.png';
-    $picThumbnail = 'https://sv1.picz.in.th/images/2021/03/16/DiWu9S.png';
-    $replyData = new ImageMessageBuilder($picFullSize,$picThumbnail);
-break;
- //case "ข้อมูลบอท":
+    break;
+case "ข้อมูลบอท":
     $picFullSize = 'https://sv1.picz.in.th/images/2021/03/16/DiWu9S.png';
     $picThumbnail = 'https://sv1.picz.in.th/images/2021/03/16/DiWu9S.png';
     $replyData = new ImageMessageBuilder($picFullSize,$picThumbnail);
