@@ -124,14 +124,16 @@ if(!is_null($events)){
 case "ข้อมูลบอท":
     $textReplyMessage = "ID Line : @210pmvok";
     $replyData = new TextMessageBuilder($textReplyMessage);
-break;
-   
- case "QRcode":
-    $picFullSize = 'https://sv1.picz.in.th/images/2021/02/23/oCK7cP.png';
-    $picThumbnail = 'https://sv1.picz.in.th/images/2021/02/23/oCK7cP.png';
+    $picFullSize = 'https://sv1.picz.in.th/images/2021/03/16/DiWu9S.png';
+    $picThumbnail = 'https://sv1.picz.in.th/images/2021/03/16/DiWu9S.png';
     $replyData = new ImageMessageBuilder($picFullSize,$picThumbnail);
-  break;
-   
+break;
+ //case "ข้อมูลบอท":
+    $picFullSize = 'https://sv1.picz.in.th/images/2021/03/16/DiWu9S.png';
+    $picThumbnail = 'https://sv1.picz.in.th/images/2021/03/16/DiWu9S.png';
+    $replyData = new ImageMessageBuilder($picFullSize,$picThumbnail);
+    break;   
+    
  default:
  $textReplyMessage = "บอทขออภัยที่ยังไม่ค่อยเข้าใจในคำถาม กรุณาเปลี่ยนคำถามหรือใช้คำที่ใกล้เคียง บอทขอแนะนำ อย่างเช่น
  - ข้อมูลการอบรม
