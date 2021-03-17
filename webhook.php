@@ -120,14 +120,9 @@ if(!is_null($events)){
     $textReplyMessage = "ขณะนี้ ข้อมูลการอบรมยังไม่พร้อมใช้งานครับ";
     $replyData = new TextMessageBuilder($textReplyMessage);
   break;
- case "ไอดีไลน์":
-    $textReplyMessage = "ID Line : @210pmvok 
- หรือแสกน QRCode พิมพ์คำค้นหาว่า คิวอาร์โค้ด" ;
-    $replyData = new TextMessageBuilder($textReplyMessage);
-    break;
- case "คิวอาร์โค้ด":
-    $picFullSize = 'https://sv1.picz.in.th/images/2021/03/16/DiWu9S.png';
-    $picThumbnail = 'https://sv1.picz.in.th/images/2021/03/16/DiWu9S.png';
+ case "เพิ่มเพื่อน":
+    $picFullSize = 'https://sv1.picz.in.th/images/2021/03/17/DxtQiE.png';
+    $picThumbnail = 'https://sv1.picz.in.th/images/2021/03/17/DxtQiE.png';
     $replyData = new ImageMessageBuilder($picFullSize,$picThumbnail);
     break;   
    
