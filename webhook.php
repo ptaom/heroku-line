@@ -145,18 +145,11 @@ if(!is_null($events)){
     break;  
   
  case "เว็บแนะนำ":
-  $textReplyMessage = "วันนี้บอทจะมาแนะนำเว็บศูนย์ความรู้ทางการเงิน คลิกเพื่อเข้าสู่เว็บไซต์";
-  $textMessage = new TextMessageBuilder($textReplyMessage);
-   
   $imageMapUrl = 'https://sv1.picz.in.th/images/2021/02/26/o8EPe2.png';
   $replyData = new ImagemapMessageBuilder(
   $imageMapUrl,'URL',new BaseSizeBuilder(1080,1080),array(
   //new ImagemapMessageActionBuilder('MSarea',new AreaBuilder(0,0,520,699)),
   new ImagemapUriActionBuilder('https://www.รู้เรื่องเงิน.com/',new AreaBuilder(0,0,1080,1080)))); 
-  $multiMessage->add($textMessage);
-  $multiMessage->add($imageMapUrl);
-  $replyData = $multiMessage;
- 
  break;
    
  }
