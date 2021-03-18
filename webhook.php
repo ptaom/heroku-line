@@ -156,7 +156,7 @@ if(!is_null($events)){
   $multiMessage->add($textMessage);
   $multiMessage->add($imageMapUrl);
   $replyData = $multiMessage;
-  $replyData = $imageMapUrl;
+ 
  break;
    
  }
