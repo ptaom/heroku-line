@@ -152,15 +152,11 @@ if(!is_null($events)){
  - ติดต่อเจ้าหน้าที่ 
  - ห้องอบรม,แผนที่
  - ที่ตั้งบริษัท
- - เว็บแนะนำ
- ";
+ - เว็บแนะนำ";
  $replyData = new TextMessageBuilder($textReplyMessage);         
     break;  
   
  case "เว็บแนะนำ":
-  $textReplyMessage = "วันนี้บอทขอแนะนำเว็บความรู้ทางการเงิน เป็นอย่างไรนั้น คลิกเพื่อเข้าดูข้อมูลได้เลยครับ";
-  $textMessage = new TextMessageBuilder($textReplyMessage);
-   
   $imageMapUrl = 'https://sv1.picz.in.th/images/2021/02/26/o8EPe2.png';
   $replyData = new ImagemapMessageBuilder(
   $imageMapUrl,'URL',new BaseSizeBuilder(1080,1080),array(
