@@ -167,6 +167,8 @@ if(!is_null($events)){
   //new ImagemapMessageActionBuilder('MSarea',new AreaBuilder(0,0,520,699)),
   new ImagemapUriActionBuilder('https://www.รู้เรื่องเงิน.com/',new AreaBuilder(0,0,1080,1080))));       
  break;
+   
+ }
  default:
    // $stickerID = 52002744;
    // $packageID = 11537;
