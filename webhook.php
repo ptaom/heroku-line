@@ -120,11 +120,21 @@ if(!is_null($events)){
     $textReplyMessage = "ขณะนี้ ข้อมูลการอบรมยังไม่พร้อมใช้งานครับ";
     $replyData = new TextMessageBuilder($textReplyMessage);
   break;
- case "เพิ่มเพื่อน":
+   
+// case "เพิ่มเพื่อน":
     $picFullSize = 'https://sv1.picz.in.th/images/2021/03/17/DxtQiE.png';
     $picThumbnail = 'https://sv1.picz.in.th/images/2021/03/17/DxtQiE.png';
     $replyData = new ImageMessageBuilder($picFullSize,$picThumbnail);
-    break;   
+    break;  
+   
+ case "เพิ่มเพื่อน":  
+    $textReplyMessage = "ไอดีของเราคือ @210pmvok หรือ scan QRcode";
+    $textMessage = new TextMessageBuilder($textReplyMessage);
+                     
+    $picFullSize = 'https://sv1.picz.in.th/images/2021/03/18/DqYJgI.png';
+    $picThumbnail = 'https://sv1.picz.in.th/images/2021/03/18/DqYJgI.png';
+    $imageMessage = new ImageMessageBuilder($picFullSize,$picThumbnail);
+ break;  
    
  default:
  $textReplyMessage = "บอทขออภัยที่ยังไม่ค่อยเข้าใจในคำถาม กรุณาเปลี่ยนคำถามหรือใช้คำที่ใกล้เคียง บอทขอแนะนำ อย่างเช่น
