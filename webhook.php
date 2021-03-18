@@ -121,12 +121,6 @@ if(!is_null($events)){
     $replyData = new TextMessageBuilder($textReplyMessage);
   break;
    
-// case "เพิ่มเพื่อน":
-    $picFullSize = 'https://sv1.picz.in.th/images/2021/03/17/DxtQiE.png';
-    $picThumbnail = 'https://sv1.picz.in.th/images/2021/03/17/DxtQiE.png';
-    $replyData = new ImageMessageBuilder($picFullSize,$picThumbnail);
-    break;  
-   
  case "เพิ่มเพื่อน":  
     $textReplyMessage = "ไอดีของเราคือ @210pmvok หรือ scan QRcode";
     $textMessage = new TextMessageBuilder($textReplyMessage);
@@ -139,23 +133,30 @@ if(!is_null($events)){
     $multiMessage->add($imageMessage);
     $replyData = $multiMessage;                                          
  break;  
-   
  default:
  $textReplyMessage = "บอทขออภัยที่ยังไม่ค่อยเข้าใจในคำถาม กรุณาเปลี่ยนคำถามหรือใช้คำที่ใกล้เคียง บอทขอแนะนำ อย่างเช่น
  - ข้อมูลการอบรม
  - ติดต่อเจ้าหน้าที่ 
  - ห้องอบรม,แผนที่
  - ที่ตั้งบริษัท
+ - เว็บแนะนำ
  ";
  $replyData = new TextMessageBuilder($textReplyMessage);         
     break;  
- case "new":
+  
+ case "แนะนำเว็บ":
+  $textReplyMessage = "วันนี้บอทจะมาแนะนำเว็บศูนย์ความรู้ทางการเงิน คลิกเพื่อเข้าสู่เว็บไซต์";
+  $textMessage = new TextMessageBuilder($textReplyMessage);
+   
   $imageMapUrl = 'https://sv1.picz.in.th/images/2021/02/26/o8EPe2.png';
   $replyData = new ImagemapMessageBuilder(
   $imageMapUrl,'URL',new BaseSizeBuilder(1080,1080),array(
   //new ImagemapMessageActionBuilder('MSarea',new AreaBuilder(0,0,520,699)),
-  new ImagemapUriActionBuilder('https://www.รู้เรื่องเงิน.com/',new AreaBuilder(0,0,1080,1080))
- )); 
+  new ImagemapUriActionBuilder('https://www.รู้เรื่องเงิน.com/',new AreaBuilder(0,0,1080,1080)))); 
+  $multiMessage->add($textMessage);
+  $multiMessage->add($imageMapUrl);
+  $replyData = $multiMessage;
+  $replyData = $imageMapUrl;
  break;
    
  }
