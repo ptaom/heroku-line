@@ -133,6 +133,19 @@ if(!is_null($events)){
     $multiMessage->add($imageMessage);
     $replyData = $multiMessage;                                          
  break;  
+ case "ไอดี":  
+    $textReplyMessage = "ไอดีของเราคือ @210pmvok หรือ scan QRcode";
+    $textMessage = new TextMessageBuilder($textReplyMessage);
+                     
+    $picFullSize = 'https://sv1.picz.in.th/images/2021/03/18/DqYJgI.png';
+    $picThumbnail = 'https://sv1.picz.in.th/images/2021/03/18/DqYJgI.png';
+    $imageMessage = new ImageMessageBuilder($picFullSize,$picThumbnail);
+    $multiMessage = new MultiMessageBuilder;
+    $multiMessage->add($textMessage);
+    $multiMessage->add($imageMessage);
+    $replyData = $multiMessage;                                          
+ break;     
+   
  default:
  $textReplyMessage = "บอทขออภัยที่ยังไม่ค่อยเข้าใจในคำถาม กรุณาเปลี่ยนคำถามหรือใช้คำที่ใกล้เคียง บอทขอแนะนำ อย่างเช่น
  - ข้อมูลการอบรม
@@ -153,8 +166,6 @@ if(!is_null($events)){
   $imageMapUrl,'URL',new BaseSizeBuilder(1080,1080),array(
   //new ImagemapMessageActionBuilder('MSarea',new AreaBuilder(0,0,520,699)),
   new ImagemapUriActionBuilder('https://www.รู้เรื่องเงิน.com/',new AreaBuilder(0,0,1080,1080)))); 
-
-  $multiMessage =     new MultiMessageBuilder;
   $multiMessage->add($textMessage);
   $multiMessage->add($imageMapUrl);
   $replyData = $multiMessage;            
