@@ -147,10 +147,10 @@ if(!is_null($events)){
  }
  break;
  default:
-    $stickerID = 52002744;
-    $packageID = 11537;
-    $replyData = new StickerMessageBuilder($packageID,$stickerID);         
- break;  
+   // $stickerID = 52002744;
+   // $packageID = 11537;
+   // $replyData = new StickerMessageBuilder($packageID,$stickerID);         
+// break;  
     }
 }
  
