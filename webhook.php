@@ -144,7 +144,7 @@ if(!is_null($events)){
  $replyData = new TextMessageBuilder($textReplyMessage);         
     break;  
   
- case "แนะนำเว็บ":
+ case "เว็บแนะนำ":
   $textReplyMessage = "วันนี้บอทจะมาแนะนำเว็บศูนย์ความรู้ทางการเงิน คลิกเพื่อเข้าสู่เว็บไซต์";
   $textMessage = new TextMessageBuilder($textReplyMessage);
    
