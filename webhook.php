@@ -165,11 +165,7 @@ if(!is_null($events)){
   $replyData = new ImagemapMessageBuilder(
   $imageMapUrl,'URL',new BaseSizeBuilder(1080,1080),array(
   //new ImagemapMessageActionBuilder('MSarea',new AreaBuilder(0,0,520,699)),
-  new ImagemapUriActionBuilder('https://www.รู้เรื่องเงิน.com/',new AreaBuilder(0,0,1080,1080)))); 
-  $multiMessage->add($textMessage);
-  $multiMessage->add($imageMapUrl);
-  $replyData = $multiMessage;            
-   
+  new ImagemapUriActionBuilder('https://www.รู้เรื่องเงิน.com/',new AreaBuilder(0,0,1080,1080))));       
  break;
  default:
    // $stickerID = 52002744;
