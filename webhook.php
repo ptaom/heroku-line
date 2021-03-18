@@ -134,6 +134,10 @@ if(!is_null($events)){
     $picFullSize = 'https://sv1.picz.in.th/images/2021/03/18/DqYJgI.png';
     $picThumbnail = 'https://sv1.picz.in.th/images/2021/03/18/DqYJgI.png';
     $imageMessage = new ImageMessageBuilder($picFullSize,$picThumbnail);
+    $multiMessage =     new MultiMessageBuilder;
+    $multiMessage->add($textMessage);
+    $multiMessage->add($imageMessage);
+    $replyData = $multiMessage;                                          
  break;  
    
  default:
